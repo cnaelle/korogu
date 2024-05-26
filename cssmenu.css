@@ -1,0 +1,89 @@
+nav{
+	width: 80%;
+	height: 50%;
+	position: sticky;
+	top: 0px;
+	background-color: rgba(0, 0, 0, 0.4);
+	padding-right:10%;
+	padding-left:10%;
+}
+
+nav ul{
+	list-style-type: none;
+	width: 1080px;
+	color: rgb(#FFFFFF);
+	padding-top: 0px;
+}
+
+nav li{
+	float: left;
+ 	height: 100%;
+ 	text-align: center;
+ 	position: relative;
+ 	color: rgb(#FFFFFF);
+ 	width: 360px;
+}
+
+nav ul::after{
+	content: "";
+	display: table;
+	clear: both;
+	color: rgb(#FFFFFF);
+}
+
+nav a{
+	display: block;
+	text-decoration: none;
+	border-bottom: 2px solid transparent;
+	padding: 10px 0px;
+	color: rgb(#FFFFFF);
+}
+
+nav a:hover{
+	border-top: 10px solid #558D54;
+	background-color: rgba(0, 0, 0, 0.4);
+	color: rgb(#FFFFFF);
+
+}
+
+.sous{
+	display: none;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	width: 90%;
+	z-index: 1000;
+	color: rgb(#FFFFFF);
+}
+ nav > ul li:hover .sous{
+ 	display: block;
+ }
+
+ .sous li{
+ 	float: none;
+ 	width: 100%;
+ 	text-align: left;
+ 	color: rgb(#FFFFFF);
+ }
+
+.sous a{
+	padding: 10px;
+	border-bottom: none;
+	text-decoration: none;
+	color: rgb(#FFFFFF);
+}
+
+.sous a:hover{
+	border-top: none;
+	border-left: 5px solid #558D54;
+	background-color: rgba(0, 0, 0, 0.4);
+	color: rgb(#FFFFFF);
+}
+
+.conteneur{
+	padding: 0;
+	height: 250px;
+	width: 100%;
+	background-image: url(foret.png);
+	color: rgb(#FFFFFF);
+	font-size: 20px;
+}

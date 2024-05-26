@@ -1,0 +1,232 @@
+@font-face {
+	font-family: 'Louis George Cafe';
+	src: url(‘fonts/Louis-George-Cafe.ttf’) format(‘truetype’);
+}
+
+body{
+	font-family:  Trebuchet MS;
+	margin: 0px;
+	padding: 10px 50px 10px;
+}
+
+/* lien non visité */
+a:link {
+	color: #3F693F;
+	text-decoration: none;
+}
+/* lien visité */
+a:visited {
+	color: #3F693F;
+	text-decoration: none;
+}
+/* souris sur le lien */
+a:hover {
+	color: #3F693F;
+	text-decoration: none;
+}
+/* lien sélécté */
+a:active {
+	color: #3F693F;
+	text-decoration: none;
+}
+
+p{
+	color: #363636;
+	padding: 10px 50px 10px;
+}
+
+h1{
+	color: #363636;
+	text-align:  center;
+
+}
+
+h2{
+	padding: 10px 50px 5px;
+	color:  #409965;
+}
+
+span{
+	font-weight: bold;
+	color: #363636;
+}
+
+.ttable{
+	font-weight:  bold;
+	color: rgba(63,105,63);
+}
+
+figcaption{
+	color: rgba(0,0,0,0.7);
+	text-align: center;
+}
+
+/*Formulaire
+.champ{
+	margin-bottom: 10px;
+}
+
+textarea{
+	width: 80%;
+	height: 100px;
+}
+
+input{
+	width: 150px;
+}
+input[type="radio"], input[type="checkbox"]{
+	width: auto;
+}
+input[type="submit"]{
+	width: 100px;
+	margin: auto;
+}*/
+
+/*Menu*/
+nav{
+	padding: 20px;
+	margin: 0 auto;
+	width: 70%;
+	height: 50px auto 50px auto;
+	position: relative;
+	top:  0px;
+}
+
+nav ul{
+	list-style-type: none;
+}
+
+nav li{
+ 	float: left;
+ 	width: 30%;
+ 	text-align: center;
+ 	position: relative;
+}
+
+nav ul::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+nav a{
+	display: block;
+	text-decoration: none;
+	border-bottom: 2px solid transparent;
+	padding: 10px 0px;
+	color: black;
+}
+
+nav a:hover{
+	color: #558D54;
+	border-top: 4px solid #558D54;
+	background-color: #dddddd;
+}
+
+.sous{
+	display: none;
+	box-shadow: 0px 2px 0px 1px #CCC;
+	background-color:  #EEEEEE;
+	position: absolute;
+	width: 90%;
+	z-index: 1000;
+}
+nav > ul li:hover .sous{
+ 	display: block;
+ }
+
+.sous li{
+ 	float: none;
+ 	width: 100%;
+ 	text-align: left;
+ }
+
+.sous a{
+	padding: 10px;
+	border-bottom: none;
+}
+
+.sous a:hover{
+	border-top: none;
+	border-left: 2px solid #558D54;
+	background-color: #DDDDDD;
+}
+
+.conteneur{
+	margin: 30px 20px;
+	height: 70px;
+}
+
+.logo{
+	text-align:center;
+	padding: 50px;
+}
+
+#scroll_to_top {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  bottom: 50px;
+  right: 30px;
+  border: 2px solid #EEEEEE;
+  background-color: #EEEEEE;
+  border-radius: 7px;
+}
+
+#scroll_to_top img {
+  width: 35px;
+}
+#horaires ul{
+	list-style-type: none;
+}
+#horaires li::before{
+	display: inline-block;
+	position: relative;
+	width: 1em;
+	height: 1em;
+	top: 0.2rem;
+	margin-right: 0.4rem;
+	content: "";
+	background-image: url("flecheListe.png");
+	background-size: contain;
+}
+#horaires li{
+	font-size: 1.2em;
+}
+
+#open{
+	background-color: rgba(0, 0, 0, 0.2);
+	padding-right:10%;
+	padding-left:10%;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	position: sticky;
+	border-radius: 10px;
+	background-image: url("foretRed.png");
+}
+#imgSatisf{
+	border: 7px solid;
+	border-color: #409965;
+	border-radius: 25%;
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+
+#contact{
+	background-color: #363636;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top:5%;
+	padding-bottom:5%;
+	border-radius: 10px;
+	}
+
+#elmtsContact{
+	padding-left:3%;
+}
+
+#bonus{
+	margin-left:10px;
+	margin-right:10px;
+}
